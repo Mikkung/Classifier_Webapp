@@ -42,12 +42,4 @@ classifier_webapp/
 
 ## Deploy as a Web App (from GitHub)
 ### Streamlit Community Cloud (free)
-1. Push this repo to GitHub (public).
-2. Go to https://share.streamlit.io/ → **New app**.
-3. Repo/branch → Main file path: `app/streamlit_app.py` → **Deploy**.
-
-### Hugging Face Spaces
-- Create Space (Streamlit) → Connect GitHub → ensure `requirements.txt` & `app/streamlit_app.py` → Build.
-
-### Render.com
-- New Web Service → Repo → Render will run `streamlit run app/streamlit_app.py` (Procfile optional).
+https://classifierwebapp-hbpnmrmin5ynjjj9izwb7e.streamlit.app/
