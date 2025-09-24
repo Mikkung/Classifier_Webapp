@@ -13,3 +13,4 @@ def plot_confusion_matrix(cm, labels, show=True, save_path=None, title="Confusio
     fig.tight_layout()
     if save_path: plt.savefig(save_path, bbox_inches="tight")
     if show: plt.show()
+    return fig
