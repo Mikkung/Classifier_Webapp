@@ -51,8 +51,10 @@ else:
             c1,c2 = st.columns(2)
             with c1: st.json({k: float(v) for k,v in metrics.items()})
             with c2:
-                fig = plt.figure(figsize=(5,5))
-                plot_confusion_matrix(cm, labels=list(le.classes_), show=False)
+                #fig = plt.figure(figsize=(5,5))
+                #plot_confusion_matrix(cm, labels=list(le.classes_), show=False)
+                #st.pyplot(fig)
+                fig = plot_confusion_matrix(cm, labels=list(le.classes_), show=False)
                 st.pyplot(fig)
             st.dataframe(test.head(20))
     else:
